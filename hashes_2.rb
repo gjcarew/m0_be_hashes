@@ -8,11 +8,12 @@ states = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
-#
-#
-#
 
+states.each do |state|
+  puts "The abbreviation for #{state[0]} is #{state[1]}"
+end
 
+#     ruby hashes_2.rb
 # ======================================
 # 2- Using the following Hash
 
@@ -24,9 +25,10 @@ birthdays = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
-#
-#
-#
+
+birthdays.each do |birthday|
+  puts "#{birthday[0]}'s birthday is #{birthday[1]}."
+end
 
 
 # ======================================
@@ -41,5 +43,15 @@ login_statuses = {
 
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
 #
-#
+login_statuses.each do |logged_in|
+  if logged_in[1] == true
+    puts logged_in[0]
+  end
+end
+
+
+
+
+
+
 #
